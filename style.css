@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+}
+
+/* Navigation */
+nav {
+    background: #101a33;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 26px;
+}
+
+nav a {
+    color: #dce4f5;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
+}
+.hero h2 {
+    font-size: 52px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.15;
+    color: #101a33;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #5c667a;
+    margin: 22px auto 28px;
+    max-width: 850px;
+    line-height: 1.6;
+}
+.hero button {
+    background: #3157d5;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(49, 87, 213, 0.25);
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #2446b8;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(49, 87, 213, 0.3);
+}
+
+/* What You'll Learn */
+.courses-preview {
+    text-align: center;
+    padding: 35px 60px 60px;
+    background: white;
+}
+
+.courses-preview h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+.course-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.course-card {
+    width: 30%;
+    padding: 30px 25px;
+    background: #f8faff;
+    border: 1px solid #e1e7f2;
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.course-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3157d5;
+}
+
+.course-card h3 {
+    font-size: 21px;
+    color: #172033;
+    margin-bottom: 15px;
+}
+
+.course-card:nth-child(1) h3::before {
+    content: "◈";
+    display: block;
+    font-size: 32px;
+    color: #3157d5;
+    margin-bottom: 12px;
+}
+
+.course-card:nth-child(2) h3::before {
+    content: "</>";
+    display: block;
+    font-size: 25px;
+    color: #3157d5;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.course-card:nth-child(3) h3::before {
+    content: "◇";
+    display: block;
+    font-size: 34px;
+    color: #3157d5;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #667085;
+    line-height: 1.6;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+    border-color: #3157d5;
+}
+/* =========================================
+   WHY HDL LEARN HUB - PREMIUM SECTION
+   ========================================= */
+
+.why-section {
+    padding: 90px 6%;
+    background:
+        radial-gradient(circle at 8% 15%,
+        rgba(120, 150, 255, 0.12),
+        transparent 25%),
+        radial-gradient(circle at 92% 80%,
+        rgba(80, 210, 190, 0.10),
+        transparent 25%),
+        #f7faff;
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-section h2 {
+    font-size: 42px;
+    font-weight: 750;
+    color: #102a56;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+/* Small premium heading above title */
+.why-section h2::before {
+    content: "WHY HDL LEARN HUB?";
+    display: block;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #5577aa;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* ================= CARDS ================= */
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual card */
+
+.why-card {
+    position: relative;
+
+    min-height: 270px;
+    padding: 40px 30px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(120, 160, 220, 0.25);
+
+    box-shadow:
+        0 15px 35px rgba(35, 70, 120, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(12px);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* Soft decorative glow */
+
+.why-card::before {
+    content: "";
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    top: -70px;
+    right: -60px;
+
+    border-radius: 50%;
+
+    background: rgba(100, 150, 255, 0.12);
+}
+
+/* Bottom curved decoration */
+
+.why-card::after {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 90px;
+
+    right: -40px;
+    bottom: -45px;
+
+    border-radius: 50%;
+
+    background: rgba(100, 170, 255, 0.10);
+}
+
+/* Different pastel card backgrounds */
+
+.why-card:nth-child(1) {
+    background: linear-gradient(
+        145deg,
+        #ffffff 45%,
+        #f3efff
+    );
+
+    border-color: #ddd4ff;
+}
+
+.why-card:nth-child(2) {
+    background: linear-gradient(
+        145deg,
+        #ffffff 45%,
+        #edf9ff
+    );
+
+    border-color: #cce8f8;
+}
+
+.why-card:nth-child(3) {
+    background: linear-gradient(
+        145deg,
+        #ffffff 45%,
+        #effcf7
+    );
+
+    border-color: #cdeee1;
+}
+
+/* ================= ICON + HEADING ================= */
+
+.why-card h3 {
+    position: relative;
+    z-index: 2;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    color: #102a56;
+
+    margin: 15px 0 18px;
+}
+
+/* Icon styling for the emoji already in your HTML */
+
+.why-card h3:first-letter {
+    font-size: 30px;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.why-card p {
+    position: relative;
+    z-index: 2;
+
+    max-width: 300px;
+    margin: 0 auto;
+
+    color: #52647d;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ================= HOVER ================= */
+
+.why-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 50px rgba(35, 70, 120, 0.15);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .why-section {
+        padding: 70px 20px;
+    }
+
+    .why-section h2 {
+        font-size: 34px;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .why-card {
+        min-height: auto;
+    }
+}
+.learning-path:nth-child(1) h3::before {
+    display: block;
+    font-size: 32px;
+    color: #3157d5;
+    margin-bottom: 12px;
+}
+
+.learning-path:nth-child(2) h3::before {
+    display: block;
+    font-size: 25px;
+    color: #3157d5;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.learning-path:nth-child(3) h3::before {
+    display: block;
+    font-size: 34px;
+    color: #3157d5;
+    margin-bottom: 10px;
+}
+
+.learning-path:nth-child(4) h3::before {
+    display: block;
+    font-size: 24px;
+    color: #3157d5;
+    margin-bottom: 10px;
+}
+.learning-path {
+    text-align: center;
+    padding: 70px 40px;
+    
+}
+
+.learning-path h2 {
+    font-size: 32px;
+    color: #172033;
+    margin-bottom: 45px;
+}
+
+.path-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.path-step {
+    width: 210px;
+    padding: 28px 20px;
+    background: white;
+    
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.path-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 40, 80, 0.10);
+}
+
+.path-step span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.path-step h3 {
+    font-size: 18px;
+    color: #172033;
+    margin: 12px 0;
+}
+
+.path-step p {
+    color: #667085;
+    line-height: 1.5;
+}
+
+.path-arrow {
+    font-size: 28px;
+    color: #4a90e2;
+}
+.features-section {
+    text-align: center;
+    padding: 70px 40px;
+    background: white;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    color: #172033;
+    margin-bottom: 45px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    width: 40%;
+    padding: 35px 30px;
+    background: #f8faff;
+    border: 1px solid #e3e8f2;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(20, 40, 80, 0.10);
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #172033;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #667085;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.feature-card button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.feature-card button:hover {
+    transform: translateY(-2px);
+}
+.leaderboard-preview {
+    text-align: center;
+    padding: 70px 40px;
+    background: #f7f9fc;
+}
+
+.leaderboard-preview h2 {
+    font-size: 32px;
+    color: #172033;
+    margin-bottom: 10px;
+}
+
+.leaderboard-subtitle {
+    color: #667085;
+    margin-bottom: 35px;
+}
+
+.leaderboard-card {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    background: white;
+    border: 1px solid #e3e8f2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.leader-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    border-bottom: 1px solid #e3e8f2;
+}
+
+.leader-row:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    font-weight: bold;
+    width: 80px;
+    text-align: left;
+}
+
+.learner {
+    flex: 1;
+    text-align: left;
+    font-weight: 600;
+    color: #172033;
+}
+
+.points {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.leaderboard-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.final-cta {
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px;
+    background: #f8faff;
+}
+
+.final-cta h2 {
+    font-size: 32px;
+    color: #172033;
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+    font-size: 17px;
+    color: #667085;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #4f9de8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.final-message {
+    text-align: center;
+    padding: 65px 20px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #f5f9ff, #eef5ff);
+    border-top: 1px solid #dce8f7;
+    border-bottom: 1px solid #dce8f7;
+}
+
+.final-message h2 {
+    font-size: 32px;
+    color: #172033;
+    margin-bottom: 16px;
+}
+
+.final-message p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #5f6b7a;
+    line-height: 1.8;
+    font-size: 17px;
+}
+.site-footer {
+    text-align: center;
+    padding: 45px 20px 25px;
+    background: #101a33;
+    color: white;
+}
+
+.site-footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.site-footer > p {
+    color: #cbd5e1;
+    margin-bottom: 22px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #dbe7f5;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #4f9de8;
+}
+
+.site-footer .copyright {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #26334d;
+    font-size: 13px;
+    color: #94a3b8;
+}
+.why-card {
+    background: #f8faff;
+    border: 1px solid #e1eaf5;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(40, 80, 120, 0.10);
+}
+
+.why-card h3 {
+    font-size: 21px;
+    color: #172033;
+    margin: 15px 0 12px;
+}
+
+.why-card p {
+    color: #667085;
+    line-height: 1.7;
+    font-size: 16px;
+}.cta-section {
+    margin-top: 80px;
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #172554);
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.cta-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.7;
+}
